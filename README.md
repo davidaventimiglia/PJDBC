@@ -4,26 +4,24 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+This project proves PJDBC, the Proxying JDBC driver.  This driver has
+a pluggable architecture and allows the introduction of proxies in
+order to intercept JDBC calls and transform both the input and the
+output.
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Usage:
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
+	Connection c = (new CatDriver().connect("jdbc:cat:jdbc:mock:foo", null));
+	
+This example sets up the CatDriver proxying driver, which just
+forwards calls to the next driver in the chain.  In this case, that
+next driver is a mock, but in practice it would be a real database
+driver.  Proxying drivers can be chained in this way, though the last
+driver in the chain should be a "real" (i.e., non-proxying) driver
+that talks to the actual database.
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+* David A. Ventimiglia <davidaventimiglia@neptunestation.com>
