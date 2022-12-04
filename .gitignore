@@ -1,3 +1,5 @@
 target
 .meghanada
 /.settings/
+/.classpath
+/.project
