@@ -1,5 +1,4 @@
 import java.sql.*;
-import org.junit.*;
 import org.pjdbc.drivers.*;
 import static org.junit.Assert.*;
 

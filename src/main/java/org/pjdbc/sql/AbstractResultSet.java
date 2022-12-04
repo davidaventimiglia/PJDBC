@@ -7,7 +7,6 @@ import java.sql.*;
 import java.util.*;
 
 public abstract class AbstractResultSet extends AbstractWrapper implements ResultSet {
-    private Statement stmt;
     private ResultSet d;
 
     public AbstractResultSet (ResultSet rset) throws SQLException {
@@ -15,8 +14,7 @@ public abstract class AbstractResultSet extends AbstractWrapper implements Resul
 	this.d = rset;}
 
     public AbstractResultSet (Statement stmt, ResultSet rset) throws SQLException {
-	this(rset);
-	this.stmt = stmt;}
+	this(rset);}
 
     @Deprecated public BigDecimal getBigDecimal (String columnLabel, int scale) throws SQLException {return d.getBigDecimal(columnLabel, scale);}
     @Deprecated public BigDecimal getBigDecimal (int columnIndex, int scale) throws SQLException {return d.getBigDecimal(columnIndex, scale);}

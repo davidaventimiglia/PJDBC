@@ -1,5 +1,4 @@
 import java.sql.*;
-import java.util.logging.*;
 import java.util.regex.*;
 import org.junit.*;
 import org.pjdbc.drivers.*;

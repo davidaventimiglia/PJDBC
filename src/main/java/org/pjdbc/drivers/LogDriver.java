@@ -1,9 +1,6 @@
 package org.pjdbc.drivers;
 
-import java.io.*;
-import java.lang.reflect.*;
 import java.sql.*;
-import java.util.*;
 import java.util.logging.*;
 import org.pjdbc.sql.*;
 

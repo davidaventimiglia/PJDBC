@@ -1,6 +1,4 @@
-import java.io.*;
 import java.sql.*;
-import java.util.logging.*;
 import org.junit.*;
 import org.pjdbc.drivers.*;
 import static org.junit.Assert.*;

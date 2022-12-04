@@ -3,10 +3,9 @@ package org.pjdbc.rmi;
 import java.rmi.*;
 import java.sql.*;
 import java.util.*;
-import java.util.logging.*;
 import java.util.concurrent.*;
 
-public interface ConnectionRemoteProxy extends WrapperRemoteProxy, Remote {
+public interface ConnectionRemoteProxy extends WrapperRemoteProxy {
     Array createArrayOf (String typeName, Object[] elements) throws RemoteException;
     Blob createBlob () throws RemoteException;
     Clob createClob () throws RemoteException;

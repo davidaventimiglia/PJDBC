@@ -15,7 +15,6 @@ public class SinkDriverTest {
     public void connectDirectlyAndInvokeMethods () {
 	try {
 	    Connection c = (new SinkDriver().connect("jdbc:sink:jdbc:mock:foo", null));
-	    MockDriver d = (MockDriver)DriverManager.getDriver("jdbc:mock:foo");
 	    Statement stmt = c.createStatement();
 	    stmt.executeQuery("select * from person;");
 	    stmt.executeQuery("insert into person (last_name, first_name, age) values ('David', 'Ventimiglia', 42);");

@@ -7,7 +7,7 @@ import java.rmi.*;
 import java.sql.*;
 import java.util.*;
 
-public interface ResultSetRemoteProxy extends WrapperRemoteProxy, Remote {
+public interface ResultSetRemoteProxy extends WrapperRemoteProxy {
     boolean absolute (int row) throws RemoteException;
     void afterLast () throws RemoteException;
     void beforeFirst () throws RemoteException;

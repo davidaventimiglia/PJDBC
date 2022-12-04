@@ -1,11 +1,9 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
 ### What is this repository for? ###
 
-This project proves PJDBC, the Proxying JDBC driver.  This driver has
-a pluggable architecture and allows the introduction of proxies in
+This project provides PJDBC, the Proxying JDBC driver.  This driver
+has a pluggable architecture and allows the introduction of proxies in
 order to intercept JDBC calls and transform both the input and the
 output.
 
