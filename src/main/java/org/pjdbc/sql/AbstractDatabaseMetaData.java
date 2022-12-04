@@ -3,7 +3,6 @@ package org.pjdbc.sql;
 import java.sql.*;
 
 public abstract class AbstractDatabaseMetaData extends AbstractWrapper implements DatabaseMetaData {
-    private Connection conn;
     private DatabaseMetaData d;
 
     protected ResultSet wrap (ResultSet r) throws SQLException {
@@ -11,7 +10,6 @@ public abstract class AbstractDatabaseMetaData extends AbstractWrapper implement
 
     public AbstractDatabaseMetaData (Connection conn, DatabaseMetaData stmt) throws SQLException {
 	super(stmt);
-	this.conn = conn;
 	this.d = stmt;}
 
     public Connection getConnection () throws SQLException {return d.getConnection();}

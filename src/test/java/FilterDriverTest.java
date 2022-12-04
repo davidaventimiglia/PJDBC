@@ -36,7 +36,6 @@ public class FilterDriverTest {
     public void connectDirectlyAndInvokeMethods () {
 	try {
 	    Connection c = (new FilterDriver().connect("jdbc:filter:jdbc:mock:foo", null));
-	    MockDriver d = (MockDriver)DriverManager.getDriver("jdbc:mock:foo");
 	    Statement stmt = c.createStatement();
 	    String query = "select * from person;";
 	    stmt.executeQuery(query);

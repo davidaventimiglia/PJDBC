@@ -2,7 +2,7 @@ package org.pjdbc.rmi;
 
 import java.rmi.*;
 
-public interface ParameterMetaDataRemoteProxy extends WrapperRemoteProxy, Remote {
+public interface ParameterMetaDataRemoteProxy extends WrapperRemoteProxy {
     String getParameterClassName (int param) throws RemoteException;
     int getParameterCount () throws RemoteException;
     int getParameterMode (int param) throws RemoteException;

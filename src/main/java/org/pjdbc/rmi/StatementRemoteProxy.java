@@ -2,9 +2,8 @@ package org.pjdbc.rmi;
 
 import java.rmi.*;
 import java.sql.*;
-import java.util.*;
 
-public interface StatementRemoteProxy extends WrapperRemoteProxy, Remote {
+public interface StatementRemoteProxy extends WrapperRemoteProxy {
     public void addBatch (String sql) throws RemoteException;
     public void cancel () throws RemoteException;
     public void clearBatch () throws RemoteException;

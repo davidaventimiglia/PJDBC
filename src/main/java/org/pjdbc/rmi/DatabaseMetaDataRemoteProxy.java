@@ -3,7 +3,7 @@ package org.pjdbc.rmi;
 import java.rmi.*;
 import java.sql.*;
 
-public interface DatabaseMetaDataRemoteProxy extends WrapperRemoteProxy, Remote {
+public interface DatabaseMetaDataRemoteProxy extends WrapperRemoteProxy {
     boolean allProceduresAreCallable () throws RemoteException;
     boolean allTablesAreSelectable () throws RemoteException;
     boolean autoCommitFailureClosesAllResultSets () throws RemoteException;

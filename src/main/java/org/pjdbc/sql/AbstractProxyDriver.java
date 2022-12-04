@@ -1,9 +1,7 @@
 package org.pjdbc.sql;
 
-import java.lang.reflect.*;
 import java.sql.*;
 import java.util.*;
-import org.pjdbc.sql.*;
 
 public abstract class AbstractProxyDriver extends AbstractDriver {
     protected boolean acceptsSubName (String subname) {

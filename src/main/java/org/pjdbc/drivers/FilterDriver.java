@@ -1,7 +1,6 @@
 package org.pjdbc.drivers;
 
 import java.sql.*;
-import java.util.*;
 import org.pjdbc.sql.*;
 
 public class FilterDriver extends AbstractProxyDriver {
